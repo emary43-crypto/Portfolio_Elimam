@@ -2,37 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayyats Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <h1>My Potfolio</h1>
+        <h1>My Portfolio</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="Work.html">Work</a>
+            <a href="work.html">Work</a>
         </nav>
     </header>
     <main>
         <section>
             <H2>Welcome</H2>
             <p>Hello! My name is Ayyat.</p>
-            <p>This is my personal portfolio</p>
+            <p> Welcome to my portfolio website. This website shows
+                some of my projects, skills, and information about me.</p>
         </section>
 
         <section>
             <H2>Goals</H2>
             <p>I am learning HTML and web development.</p>
         </section>
+        <section>
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    required
+                    aria-describedby="nameError"
+                >
+
+                <p id="nameError" class="error"></p>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    required
+                    aria-describedby="emailError"
+                >
+
+                <p id="emailError" class="error"></p>
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <textarea 
+                    id="message" 
+                    name="message"
+                    required
+                    aria-describedby="messageError"
+                ></textarea>
+
+                <p id="messageError" class="error"></p>
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
     </main>
 
     <footer>
         <p>2026 My Portfolio</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

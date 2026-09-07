@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me - My portfolio</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>About Me</h1>
+        <p>Learn a little more about me.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Who I Am</h2>
+            <p>
+               I am a college student studying Information Technology.
+                I am interested in technology, websites, and learning
+                new computer skills. 
+            </p>
+            <h2>My Skills</h2>
+            <ul>
+                 <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Google Workspace</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact me</h2>
+            <form id="contactform">
+                <fieldset>
+
+                    <legend>Contact Information</legend>
+
+                    <label for="name">Name:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        aria-describedby="nameError"
+                    >
+
+                    <p id="nameError" class="error"></p>
+
+
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        aria-describedby="emailError"
+                    >
+
+                    <p id="emailError" class="error"></p>
+
+
+                    <label for="message">Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        aria-describedby="messageError"
+                    ></textarea>
+
+                    <p id="messageError" class="error"></p>
+
+                </fieldset>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+<footer>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
 </body>
+
 </html>
