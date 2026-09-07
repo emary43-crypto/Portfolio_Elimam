@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Milestone 3 Accessibility and Visual Design
 
 ## Accessibility Fixes
@@ -62,3 +63,6 @@ I used the same color palette across all three pages.
 - Secondary: #457b9d
 - Background: #f1faee
 - Text: #222222
+=======
+
+>>>>>>> 6cf785621593b30e3a74141d85134a762c255be9
